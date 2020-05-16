@@ -7,6 +7,12 @@
       <link href="/style/dist.css" rel="stylesheet" />
    </head>
    <body>
+      <div
+         class="bg-success w-100 lead d-flex justify-content-center fixed-top"
+      >
+         <img src="/icons/success.svg" width="32px" />
+         <p class="d-inline py-4 ml-2">Card created!</p>
+      </div>
       <div class="container">
          <div class="row">
             <div
@@ -18,17 +24,14 @@
                <div class="clearfix"></div>
 
                <div
-                  class="btn-group d-flex mt-1 mb-5"
+                  class="btn-group d-flex mt-1"
                   role="navigation"
                   aria-label="navigation"
                >
-                  <a href="/create-imagery.html" class="btn btn-secondary">
+                  <button type="button" class="btn btn-secondary tab-active">
                      Create new
-                  </a>
-                  <button
-                     type="button"
-                     class="btn btn-secondary tab-separator tab-active"
-                  >
+                  </button>
+                  <button type="button" class="btn btn-secondary tab-separator">
                      Review
                   </button>
                   <button type="button" class="btn btn-secondary tab-separator">
@@ -36,16 +39,22 @@
                   </button>
                </div>
 
+               <p class="text-center lead text-muted my-2">
+                  Add memorable imagery
+               </p>
+
                <div class="card">
                   <div class="card-body bg-primary lead">
-                     A wonderful serenity has taken possession of my entire
-                     soul, like these sweet mornings of spring which I enjoy
-                     with my whole heart. I am alone, and feel the charm of
-                     existence in this spot, which was.
+                     <textarea rows="11" class="d-md-none" autofocus></textarea>
+                     <textarea
+                        rows="6"
+                        class="d-none d-md-block"
+                        autofocus
+                     ></textarea>
                   </div>
                </div>
 
-               <div class="card mb-5">
+               <div class="card">
                   <div class="card-body bg-secondary lead">
                      The European languages are members of the same family.
                      Their separate existence is a myth. For science, music,
@@ -54,20 +63,20 @@
                   </div>
                </div>
 
-               <button class="btn btn-link">Edit</button>
-               <div class="float-right">
-                  <button class="btn btn-outline-primary">
-                     Needs work
-                  </button>
-                  <button class="btn btn-primary ml-4">
-                     <img
-                        src="/icons/thumbs-up.svg"
-                        width="20px"
-                        style="margin-bottom: 5px; margin-right: 4px;"
-                     />
-                     Got it
-                  </button>
-               </div>
+               <p class="float-right mt-2 mb-5">0/240</p>
+
+               <div class="clearfix"></div>
+
+               <button class="btn btn-link">Back to answer</button>
+
+               <button class="btn btn-primary btn-lg ml-4 float-right">
+                  <img
+                     src="/icons/save.svg"
+                     width="20px"
+                     style="margin-bottom: 3px; margin-right: 4px;"
+                  />
+                  Save
+               </button>
             </div>
          </div>
       </div>
