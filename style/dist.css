@@ -1986,7 +1986,7 @@ pre code {
 .form-control {
   display: block;
   width: 100%;
-  height: calc(1.5em + 0.75rem + 2px);
+  height: 44px;
   padding: 8px 16px;
   font-size: 1rem;
   font-weight: 400;
@@ -1994,7 +1994,7 @@ pre code {
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 2px solid #ced4da;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -2046,23 +2046,23 @@ select.form-control:focus::-ms-value {
 }
 
 .col-form-label {
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-bottom: 0;
   font-size: inherit;
   line-height: 1.5;
 }
 
 .col-form-label-lg {
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 1rem;
   line-height: 1.5;
 }
 
 .col-form-label-sm {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -2077,7 +2077,7 @@ select.form-control:focus::-ms-value {
   color: #212529;
   background-color: transparent;
   border: solid transparent;
-  border-width: 1px 0;
+  border-width: 2px 0;
 }
 .form-control-plaintext.form-control-sm, .form-control-plaintext.form-control-lg {
   padding-right: 0;
@@ -2085,7 +2085,7 @@ select.form-control:focus::-ms-value {
 }
 
 .form-control-sm {
-  height: calc(1.5em + 0.5rem + 2px);
+  height: 36px;
   padding: 4px 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -2093,7 +2093,7 @@ select.form-control:focus::-ms-value {
 }
 
 .form-control-lg {
-  height: calc(1.5em + 1rem + 2px);
+  height: 44px;
   padding: 8px 32px;
   font-size: 1rem;
   line-height: 1.5;
@@ -3320,7 +3320,7 @@ input[type=button].btn-block {
 .input-group > .custom-file + .form-control,
 .input-group > .custom-file + .custom-select,
 .input-group > .custom-file + .custom-file {
-  margin-left: -1px;
+  margin-left: -2px;
 }
 .input-group > .form-control:focus,
 .input-group > .custom-select:focus,
@@ -3374,15 +3374,15 @@ input[type=button].btn-block {
 .input-group-append .btn + .input-group-text,
 .input-group-append .input-group-text + .input-group-text,
 .input-group-append .input-group-text + .btn {
-  margin-left: -1px;
+  margin-left: -2px;
 }
 
 .input-group-prepend {
-  margin-right: -1px;
+  margin-right: -2px;
 }
 
 .input-group-append {
-  margin-left: -1px;
+  margin-left: -2px;
 }
 
 .input-group-text {
@@ -3397,7 +3397,7 @@ input[type=button].btn-block {
   text-align: center;
   white-space: nowrap;
   background-color: #e9ecef;
-  border: 1px solid #ced4da;
+  border: 2px solid #ced4da;
   border-radius: 0.25rem;
 }
 .input-group-text input[type=radio],
@@ -3407,7 +3407,7 @@ input[type=button].btn-block {
 
 .input-group-lg > .form-control:not(textarea),
 .input-group-lg > .custom-select {
-  height: calc(1.5em + 1rem + 2px);
+  height: 44px;
 }
 
 .input-group-lg > .form-control,
@@ -3424,7 +3424,7 @@ input[type=button].btn-block {
 
 .input-group-sm > .form-control:not(textarea),
 .input-group-sm > .custom-select {
-  height: calc(1.5em + 0.5rem + 2px);
+  height: 36px;
 }
 
 .input-group-sm > .form-control,
@@ -11418,7 +11418,8 @@ textarea {
   resize: none;
 }
 
-.bg-success {
+.bg-success,
+.bg-danger {
   color: #fff;
 }
 
