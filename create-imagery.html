@@ -8,7 +8,8 @@
    </head>
    <body>
       <div
-         class="bg-success w-100 lead d-flex justify-content-center fixed-top"
+         class="bg-success w-100 lead justify-content-center fixed-top d-none"
+         id="overlay-success"
       >
          <img src="/icons/success.svg" width="32px" />
          <p class="d-inline py-4 ml-2">Card created!</p>
@@ -63,13 +64,16 @@
                   </div>
                </div>
 
-               <p class="float-right mt-2 mb-5">0/240</p>
+               <p class="float-right mt-2 mb-5 text-muted">0/240</p>
 
                <div class="clearfix"></div>
 
                <button class="btn btn-link">Back to answer</button>
 
-               <button class="btn btn-primary btn-lg ml-4 float-right">
+               <button
+                  class="btn btn-primary btn-lg ml-4 float-right"
+                  id="save-card"
+               >
                   <img
                      src="/icons/save.svg"
                      width="20px"
@@ -80,5 +84,10 @@
             </div>
          </div>
       </div>
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+         defer
+      ></script>
+      <script src="/script.js" defer></script>
    </body>
 </html>
