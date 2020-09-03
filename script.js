@@ -11,15 +11,13 @@ $("#create-imagery-input").keydown(function (e) {
    // If the key the user has pressed is backspace, decrement the count
    if (key === 8) {
       console.log("The user has pressed backspace!");
-      imageryCharsCount = imageryCharsCount - 1;
+      imageryCharsCount--;
       if (imageryCharsCount < 0) {
          console.log("You have entered negative territory!");
          imageryCharsCount = 0;
       }
-   } else if (key === 16) {
-      console.log("Shift was pressed.");
-   } else if (key === 18) {
-      console.log("Alt was pressed.");
+   } else if (key === 16 || 18 || 46 || 35 || 36 || 20) {
+      console.log("This doesn't count in the character counter.");
    } else {
       //Else, increment the count
       console.log("The user has pressed any other key!");
@@ -29,5 +27,3 @@ $("#create-imagery-input").keydown(function (e) {
    console.log("Total inputted chars: ", imageryCharsCount);
    $("#imagery-char-count").html(imageryCharsCount);
 });
-
-// startingCharCount
